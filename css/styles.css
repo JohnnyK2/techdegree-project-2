@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+header ul {
+  list-style: none;
+  margin: auto;
+  width: 70%;
+  padding: 40px;
+}
+
+header ul li {
+  align-content: center;
+  background-color: white;
+  margin: 1em;
+  padding: 5px 0;
+}
+
+
+.content-images {
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Cinzel', serif, sans-serif;
+}
+
+.primary-content p {
+  font-family: 'Economica', serif, sans-serif;
+  font-size: 1.5em;
+}
+
+.primary-content {
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Economica', serif, sans-serif;
+  font-size: 1em;
+}
+
+footer {
+  background-color: #F5F5F5;
+  text-align: center;
+}
