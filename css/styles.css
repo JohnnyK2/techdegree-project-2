@@ -5,22 +5,43 @@
 header {
   text-align: center;
   background-color: #F5F5F5;
+  margin: auto;
+  padding-bottom: 4em;
+}
+
+h1 {
+  padding-top: 30px;
+  font-family: 'Economica', serif, sans-serif;
 }
 
 header ul {
   list-style: none;
   margin: auto;
-  width: 70%;
-  padding: 40px;
+  width: 90%;
+  padding: 10px;
 }
 
 header ul li {
-  align-content: center;
+  font-family: 'Cinzel', serif, sans-serif;
+  font-weight: bold;
+  text-align: center;
   background-color: white;
-  margin: 1em;
-  padding: 5px 0;
+  margin: .5em auto;
+  padding: .5em 0;
 }
 
+header p {
+  font-family: 'Economica', serif, sans-serif;
+  font-weight: lighter;
+  margin: 1em auto;
+  font-size: 27px;
+  width: 75%;
+}
+
+.profile-image {
+  margin-top: 2em;
+  width: 68%;
+}
 
 .content-images {
   width: 100%;
@@ -28,6 +49,7 @@ header ul li {
 
 h2 {
   font-family: 'Cinzel', serif, sans-serif;
+  padding-top: 2rem;
 }
 
 .primary-content p {
@@ -36,6 +58,7 @@ h2 {
 }
 
 .primary-content {
+  margin: 4rem 0;
   text-align: center;
 }
 
@@ -45,6 +68,7 @@ footer p {
 }
 
 footer {
+  padding-top: 4rem;
   background-color: #F5F5F5;
   text-align: center;
 }
