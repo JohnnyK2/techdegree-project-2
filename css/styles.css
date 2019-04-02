@@ -41,6 +41,7 @@ header p {
 .profile-image {
   margin-top: 2em;
   width: 68%;
+  border-radius: 20%;
 }
 
 .content-images {
@@ -64,11 +65,62 @@ h2 {
 
 footer p {
   font-family: 'Economica', serif, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  margin: auto;
+  padding: 0;
+}
+
+footer li {
+  font-family: 'Economica', serif, sans-serif;
   font-size: 1em;
+  list-style: none;
+  padding-bottom: 1rem;
+  margin: auto;
+  font-weight: lighter;
 }
 
 footer {
   padding-top: 4rem;
   background-color: #F5F5F5;
   text-align: center;
+}
+
+/*--------------------------------
+ Media Queries for tablet layout
+----------------------------------*/
+
+@media (min-width: 768px) {
+  header ul li {
+    display: inline-block;
+    background: #F5F5F5;
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+
+  .profile-image {
+    float: right;
+    width: 40%;
+    padding-left: 10px;
+  }
+
+  header p {
+    float: left;
+    width: 60%;
+  }
+
+  .profile-image,
+  header p {
+    margin: auto;
+  }
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
