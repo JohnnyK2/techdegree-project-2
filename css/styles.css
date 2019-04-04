@@ -41,7 +41,7 @@ header p {
 .profile-image {
   margin-top: 2em;
   width: 68%;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 .content-images {
@@ -94,6 +94,12 @@ footer {
 ----------------------------------*/
 
 @media (min-width: 768px) {
+
+  body {
+    max-width: 950px;
+    margin: auto;
+  }
+
   header ul li {
     display: inline-block;
     background: #F5F5F5;
@@ -114,17 +120,30 @@ footer {
     padding-left: 10px;
   }
 
-  .col-1-img {
+  .col-1 {
     float: left;
     width: 50%;
+    padding: 0 1% 0 2%;
   }
 
-  .col-2-img {
+  .col-2{
     float: left;
     width: 50%;
+    padding: 0 1% 0 2%;
   }
 
+  .primary-content p {
+    width: 80%;
+    margin: auto;
+  }
 
+  .primary-content h2 {
+    padding-top: 0;
+  }
+
+  .content-images {
+    padding-top: 1.5rem;
+  }
 }
 
 .clearfix::after {
