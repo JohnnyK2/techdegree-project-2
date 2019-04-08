@@ -5,11 +5,12 @@
 header {
   text-align: center;
   background-color: #F5F5F5;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 4em;
 }
 
 h1 {
+  margin-top: 0;
   padding-top: 30px;
   font-family: 'Economica', serif, sans-serif;
 }
@@ -67,6 +68,7 @@ footer p {
   font-family: 'Economica', serif, sans-serif;
   font-weight: lighter;
   padding-bottom: 1rem;
+  margin: auto;
 }
 
 footer ul {
@@ -89,6 +91,22 @@ footer {
   text-align: center;
 }
 
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-shadow: 2px 2px darkgrey;
+}
+
+a:visited {
+  color: black;
+}
+
+a:focus {
+  color: navy;
+}
 /*--------------------------------
  Media Queries for tablet layout
 ----------------------------------*/
@@ -144,7 +162,85 @@ footer {
   .content-images {
     padding-top: 1.5rem;
   }
+
+  .contact-info {
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    width: 50%;
+    padding-bottom: 2em;
+  }
+
+  .footer-nav {
+    width: 80%;
+    border-top: 1px solid darkgrey;
+    margin: auto;
+  }
+
+  .footer-nav li {
+    float: right;
+    padding: 50px 10px 50px 0;
+    font-size: 0.8em;
+  }
+
+  .footer-nav li:first-child {
+    float: left;
+    padding-left: 10px;
+  }
+
 }
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1250px;
+  }
+
+  header p {
+    padding-left: 40px
+  }
+
+  .wrapper {
+    margin: auto;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 18px;
+  }
+
+  .main-nav {
+    text-align: right;
+  }
+
+  .main-nav li:last-child {
+    padding-right: 0;
+  }
+
+  .profile-image {
+    padding-right: 20px;
+  }
+
+  h1,
+  .main-nav {
+    float: left;
+    width: 50%;
+  }
+
+  .row-1 {
+    float: left;
+    width: 33.33%;
+    padding-bottom: 3em;
+  }
+
+  .row-2 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+
 
 .clearfix::after {
   content: "";
