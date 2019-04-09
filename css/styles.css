@@ -46,7 +46,8 @@ header p {
 }
 
 .content-images {
-  width: 100%;
+  width: 90%;
+  padding-top: 2em;
 }
 
 h2 {
@@ -57,10 +58,14 @@ h2 {
 .primary-content p {
   font-family: 'Economica', serif, sans-serif;
   font-size: 1.5em;
+  width: 90%;
+  margin: auto;
 }
 
 .primary-content {
-  margin: 4rem 0;
+  background: linear-gradient(30deg, lightgrey, transparent 30%),url('../responsive_layout_v3/images/tech-body.jpg') no-repeat top center ;
+ background-size: cover;
+ overflow: hidden;
   text-align: center;
 }
 
@@ -68,7 +73,9 @@ footer p {
   font-family: 'Economica', serif, sans-serif;
   font-weight: lighter;
   padding-bottom: 1rem;
-  margin: auto;
+  margin: 1rem auto; 0;
+  width: 90%;
+  font-size: 1.5rem;
 }
 
 footer ul {
@@ -78,17 +85,41 @@ footer ul {
 
 footer li {
   font-family: 'Economica', serif, sans-serif;
-  font-size: 1em;
   list-style: none;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   margin: auto;
-  font-weight: lighter;
 }
 
 footer {
   padding-top: 4rem;
   background-color: #F5F5F5;
   text-align: center;
+}
+
+.contact-info {
+  font-size: 1.5rem;
+}
+
+.cell-footer {
+  padding-top: 1em;
+  border-top: 1px solid darkgrey;
+  font-size: 1rem;
+  margin: 1em auto 0;
+}
+
+.cell-footer li:first-child {
+  float: left;
+  padding-left: 1em;
+}
+
+.cell-footer li:last-child {
+  float: right;
+  padding-right:  1em;
+}
+
+.footer-nav {
+  display: none;
 }
 
 a:link {
@@ -114,7 +145,6 @@ a:focus {
 @media (min-width: 768px) {
 
   body {
-    max-width: 950px;
     margin: auto;
   }
 
@@ -141,13 +171,11 @@ a:focus {
   .col-1 {
     float: left;
     width: 50%;
-    padding: 0 1% 0 2%;
   }
 
   .col-2{
     float: left;
     width: 50%;
-    padding: 0 1% 0 2%;
   }
 
   .primary-content p {
@@ -168,25 +196,34 @@ a:focus {
   }
 
   footer p {
-    width: 50%;
+    width: 80%;
     padding-bottom: 2em;
   }
 
+  .cell-footer {
+    display: none;
+  }
+
   .footer-nav {
-    width: 80%;
+    width: 100%;
     border-top: 1px solid darkgrey;
     margin: auto;
+    display: inline-block;
   }
 
   .footer-nav li {
     float: right;
     padding: 50px 10px 50px 0;
-    font-size: 0.8em;
+    font-size: 1.2rem;
   }
 
   .footer-nav li:first-child {
     float: left;
-    padding-left: 10px;
+    padding-left: 2em;
+  }
+
+  .footer-nav li:nth-child(2) {
+    padding-right: 2em;
   }
 
 }
@@ -231,12 +268,24 @@ a:focus {
   .row-1 {
     float: left;
     width: 33.33%;
-    padding-bottom: 3em;
+    padding-bottom: 0;
   }
 
   .row-2 {
     float: left;
     width: 33.33%;
+  }
+
+  .content-images {
+    padding-top: 18px;
+  }
+
+  footer p {
+    width: 60%;
+  }
+
+  footer h2 {
+    margin-bottom: 0;
   }
 }
 
