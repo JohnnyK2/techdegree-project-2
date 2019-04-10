@@ -69,6 +69,25 @@ h2 {
   text-align: center;
 }
 
+.skills {
+  text-align: center;
+  background-color: lightslategrey;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+.skills ul {
+  padding: 0;
+}
+
+.skills li {
+  font-family: 'Economica', serif, sans-serif;
+  font-size: 1.5em;
+  list-style: none;
+  padding-top: 0.5rem;
+  margin: auto;
+}
+
 footer p {
   font-family: 'Economica', serif, sans-serif;
   font-weight: lighter;
@@ -224,6 +243,7 @@ a:focus {
 
   .footer-nav li:nth-child(2) {
     padding-right: 2em;
+    padding-left: 10px;
   }
 
 }
