@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 320px;
+}
+
 header {
   text-align: center;
   background-color: #F5F5F5;
